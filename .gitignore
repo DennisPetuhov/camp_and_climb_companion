@@ -1,0 +1,150 @@
+# --- OS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- IDEs & editors ---
+.idea/*
+!.idea/dart.xml
+!.idea/externalDependencies.xml
+!.idea/runConfigurations/
+*.iml
+!camp_and_climb_companion.iml
+*.ipr
+*.iws
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.code-workspace
+.cursor/
+*.sublime-project
+*.sublime-workspace
+.classpath
+.project
+.settings/
+
+# --- Flutter / Dart ---
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+**/doc/api/
+*.dart.js
+*.info.json
+*.js
+*.js_
+*.js.deps
+*.js.map
+
+# --- Test & coverage ---
+/coverage/
+coverage/
+lcov.info
+.test_coverage.dart
+test/.test_coverage.dart
+
+# --- Code generation cache (generated *.g.dart / *.freezed.dart are usually committed) ---
+# Uncomment if you always run build_runner in CI and never commit outputs:
+# **/*.g.dart
+# **/*.freezed.dart
+# **/*.mocks.dart
+
+# --- Secrets & local config (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+**/key.properties
+**/*.jks
+**/*.keystore
+**/google-services.json.local
+**/GoogleService-Info.plist.local
+secrets/
+credentials/
+
+# --- FVM (Flutter version manager) ---
+.fvm/flutter_sdk
+.fvm/versions/
+.fvm/cache/
+
+# --- Android ---
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/.cxx/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/key.properties
+
+# --- iOS / macOS ---
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/.last_build_id
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/profile
+**/ios/**/xcuserdata/
+**/macos/Flutter/ephemeral/
+**/macos/Pods/
+**/macos/**/xcuserdata/
+
+# --- Web ---
+lib/generated_plugin_registrant.dart
+
+# --- Windows / Linux desktop ---
+**/windows/flutter/ephemeral/
+**/linux/flutter/ephemeral/
+
+# --- Fastlane ---
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots/
+**/fastlane/test_output/
+
+# --- Crash / obfuscation / symbols ---
+*.log
+*.class
+*.pyc
+*.swp
+app.*.symbols
+app.*.map.json
+migrate_working_dir/
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+
+# --- Misc tooling ---
+melos_*.yaml.bak
+devtools_options.yaml
+.firebase/
+.firebaserc.local
