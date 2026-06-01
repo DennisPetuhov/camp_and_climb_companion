@@ -6,13 +6,13 @@ import 'network_config.dart';
 class DioFactory {
   const DioFactory._();
 
-  static Dio create({NetworkConfig config = NetworkConfig.defaults}) {
+  static Dio create({required NetworkConfig config}) {
     return Dio(
       BaseOptions(
         connectTimeout: config.connectTimeout,
         receiveTimeout: config.receiveTimeout,
         headers: {
-          'User-Agent': NetworkConfig.userAgent,
+          'User-Agent': config.userAgent,
         },
       ),
     );

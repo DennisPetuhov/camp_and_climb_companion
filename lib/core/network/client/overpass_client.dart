@@ -8,9 +8,10 @@ import '../dto/overpass/overpass_response.dart';
 
 /// Entry point for Overpass API calls.
 class OverpassClient {
-  OverpassClient({Dio? dio, NetworkConfig? config})
+  OverpassClient({required NetworkConfig config, Dio? dio})
     : _api = OverpassApi(
-        dio ?? DioFactory.create(config: config ?? NetworkConfig.defaults),
+        dio ?? DioFactory.create(config: config),
+        baseUrl: config.overpassBaseUrl,
       );
 
   final OverpassApi _api;

@@ -30,18 +30,27 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
 
   # Cross-platform Dart deps (iOS, Android, web, desktop) — not native Pod/Gradle libs.
   cupertino_icons: ^1.0.8 # Cupertino-style icons on any platform
   dio: ^5.8.0+1 # HTTP client
   retrofit: ^4.9.2 # Typed REST API on top of Dio
   json_annotation: ^4.9.0 # JSON model annotations (runtime)
+  flutter_dotenv: ^5.2.1
 
   #BLoC
   flutter_bloc: ^9.1.1
   equatable: ^2.0.7
 
 dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.15
+  retrofit_generator: ^10.2.6
+  json_serializable: ^6.9.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -53,11 +62,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  generate: true
 
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+
+  assets:
+    - .env.example
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
