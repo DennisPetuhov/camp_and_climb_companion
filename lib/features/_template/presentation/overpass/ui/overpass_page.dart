@@ -1,8 +1,9 @@
-import 'package:camp_and_climb_companion/features/_template/presentation/bloc/overpass_bloc.dart';
-import 'package:camp_and_climb_companion/features/_template/presentation/bloc/overpass_event.dart';
-import 'package:camp_and_climb_companion/features/_template/presentation/bloc/overpass_state.dart';
+import 'package:camp_and_climb_companion/features/_template/presentation/overpass/bloc/overpass_bloc.dart';
+import 'package:camp_and_climb_companion/features/_template/presentation/overpass/bloc/overpass_event.dart';
+import 'package:camp_and_climb_companion/features/_template/presentation/overpass/bloc/overpass_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:camp_and_climb_companion/l10n/app_localizations.dart';
 
 class OverpassPage extends StatefulWidget {
   const OverpassPage({super.key});
@@ -30,16 +31,18 @@ class _OverpassPageState extends State<OverpassPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Overpass JSON size')),
+      appBar: AppBar(title: Text(l10n.overpassPageTitle)),
       body: Padding(
         padding: const EdgeInsetsDirectional.all(16),
         child: BlocConsumer<OverpassBloc, OverpassState>(
           listener: (context, state) {
             if (state is OverpassLoadSuccess) {
               _controller.text =
-                  '${state.jsonCharCount} symbols\n'
-                  '${state.elementCount} fountains';
+                  '${l10n.overpassResultSymbols(state.jsonCharCount)}\n'
+                  '${l10n.overpassResultFountains(state.elementCount)}';
             }
             if (state is OverpassLoadFailure) {
               _controller.text = state.message;
@@ -55,9 +58,9 @@ class _OverpassPageState extends State<OverpassPage> {
                   controller: _controller,
                   readOnly: true,
                   maxLines: 4,
-                  decoration: const InputDecoration(
-                    labelText: 'JSON character count',
-                    border: OutlineInputBorder(),
+                  decoration: InputDecoration(
+                    labelText: l10n.overpassJsonCountLabel,
+                    border: const OutlineInputBorder(),
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -67,7 +70,7 @@ class _OverpassPageState extends State<OverpassPage> {
                       : () => context.read<OverpassBloc>().add(
                           const OverpassLoadRequested(),
                         ),
-                  child: const Text('Load from Overpass'),
+                  child: Text(l10n.overpassLoadButton),
                 ),
               ],
             );

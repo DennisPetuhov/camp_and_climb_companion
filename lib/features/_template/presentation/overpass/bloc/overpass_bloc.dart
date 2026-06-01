@@ -2,14 +2,13 @@ import 'dart:convert';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../data/repositories/overpass_repository_impl.dart';
-import '../../domain/repositories/overpass_repository.dart';
+import '../../../domain/repositories/overpass_repository.dart';
 import 'overpass_event.dart';
 import 'overpass_state.dart';
 
 class OverpassBloc extends Bloc<OverpassEvent, OverpassState> {
-  OverpassBloc({OverpassRepository? repository})
-      : _repository = repository ?? OverPassRepositoryImpl(),
+  OverpassBloc({required OverpassRepository repository})
+      : _repository = repository,
         super(const OverpassInitial()) {
     on<OverpassLoadRequested>(_onLoadRequested);
   }

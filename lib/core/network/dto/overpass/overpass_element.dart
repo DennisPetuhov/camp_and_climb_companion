@@ -1,3 +1,4 @@
+import 'package:camp_and_climb_companion/core/models/lat_lon.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 import 'overpass_center.dart';
@@ -25,15 +26,11 @@ class OverpassElement {
   final Map<String, String> tags;
 
   /// Lat/lon for map pins: direct on nodes, [center] on ways/relations.
-  ({double lat, double lon})? get position {
+  LatLon? get position {
     if (lat != null && lon != null) {
-      return (lat: lat!, lon: lon!);
+      return LatLon(lat: lat!, lon: lon!);
     }
-    final c = center;
-    if (c != null) {
-      return (lat: c.lat, lon: c.lon);
-    }
-    return null;
+    return center?.latLon;
   }
 
   factory OverpassElement.fromJson(Map<String, dynamic> json) =>

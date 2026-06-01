@@ -1,3 +1,4 @@
+import 'package:camp_and_climb_companion/core/models/lat_lon.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'overpass_center.g.dart';
@@ -11,6 +12,8 @@ class OverpassCenter {
 
   final double lat;
   final double lon;
+
+  LatLon get latLon => LatLon(lat: lat, lon: lon);
 
   factory OverpassCenter.fromJson(Map<String, dynamic> json) =>
       _$OverpassCenterFromJson(json);

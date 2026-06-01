@@ -4,8 +4,7 @@ import 'package:camp_and_climb_companion/features/_template/domain/repositories/
 import '../../../../core/network/client/overpass_client.dart';
 
 class OverPassRepositoryImpl implements OverpassRepository {
-  OverPassRepositoryImpl({OverpassClient? client})
-    : _client = client ?? OverpassClient();
+  OverPassRepositoryImpl({required OverpassClient client}) : _client = client;
 
   final OverpassClient _client;
 

@@ -1,0 +1,37 @@
+{
+  "@@locale": "en",
+  "appTitle": "Camp & Climb Companion",
+  "@appTitle": {
+    "description": "Application title shown in the task switcher and MaterialApp"
+  },
+  "overpassPageTitle": "Overpass JSON size",
+  "@overpassPageTitle": {
+    "description": "Title for the Overpass debug page"
+  },
+  "overpassJsonCountLabel": "JSON character count",
+  "@overpassJsonCountLabel": {
+    "description": "Label for the read-only JSON size field"
+  },
+  "overpassLoadButton": "Load from Overpass",
+  "@overpassLoadButton": {
+    "description": "Button to trigger an Overpass API request"
+  },
+  "overpassResultSymbols": "{count} symbols",
+  "@overpassResultSymbols": {
+    "description": "Line showing how many characters are in the JSON response",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "overpassResultFountains": "{count} fountains",
+  "@overpassResultFountains": {
+    "description": "Line showing how many drinking water elements were returned",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
