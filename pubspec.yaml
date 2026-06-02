@@ -39,6 +39,7 @@ dependencies:
   dio: ^5.8.0+1 # HTTP client
   retrofit: ^4.9.2 # Typed REST API on top of Dio
   json_annotation: ^4.9.0 # JSON model annotations (runtime)
+  graphql: ^5.2.1
   flutter_dotenv: ^5.2.1
 
   #BLoC
