@@ -1,0 +1,79 @@
+{
+  "@@locale": "en",
+  "appTitle": "Camp & Climb Companion",
+  "@appTitle": {
+    "description": "Application title shown in the task switcher and MaterialApp"
+  },
+  "overpassPageTitle": "Overpass JSON size",
+  "@overpassPageTitle": {
+    "description": "Title for the Overpass debug page"
+  },
+  "overpassJsonCountLabel": "JSON character count",
+  "@overpassJsonCountLabel": {
+    "description": "Label for the read-only JSON size field"
+  },
+  "overpassLoadButton": "Load from Overpass",
+  "@overpassLoadButton": {
+    "description": "Button to trigger an Overpass API request"
+  },
+  "overpassResultSymbols": "{count} symbols",
+  "@overpassResultSymbols": {
+    "description": "Line showing how many characters are in the JSON response",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "overpassResultFountains": "{count} fountains",
+  "@overpassResultFountains": {
+    "description": "Line showing how many drinking water elements were returned",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "openBetaPageTitle": "OpenBeta JSON size",
+  "@openBetaPageTitle": {
+    "description": "Title for the OpenBeta debug page"
+  },
+  "openBetaJsonCountLabel": "JSON character count",
+  "@openBetaJsonCountLabel": {
+    "description": "Label for the read-only JSON size field on OpenBeta page"
+  },
+  "openBetaLoadButton": "Load from OpenBeta",
+  "@openBetaLoadButton": {
+    "description": "Button to trigger an OpenBeta GraphQL request"
+  },
+  "openBetaResultSymbols": "{count} symbols",
+  "@openBetaResultSymbols": {
+    "description": "Line showing how many characters are in the OpenBeta JSON response",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "openBetaResultAreas": "{count} areas",
+  "@openBetaResultAreas": {
+    "description": "Line showing how many climbing areas were returned",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "templateDebugHomeTitle": "API debug",
+  "@templateDebugHomeTitle": {
+    "description": "Title for the template feature debug home screen"
+  },
+  "templateDebugOverpassTile": "Overpass",
+  "@templateDebugOverpassTile": {
+    "description": "Navigation tile to the Overpass debug page"
+  },
+  "templateDebugOpenBetaTile": "OpenBeta",
+  "@templateDebugOpenBetaTile": {
+    "description": "Navigation tile to the OpenBeta debug page"
+  }
+}
