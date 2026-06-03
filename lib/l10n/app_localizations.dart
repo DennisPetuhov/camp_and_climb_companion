@@ -129,6 +129,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count} fountains'**
   String overpassResultFountains(int count);
+
+  /// Title for the OpenBeta debug page
+  ///
+  /// In en, this message translates to:
+  /// **'OpenBeta JSON size'**
+  String get openBetaPageTitle;
+
+  /// Label for the read-only JSON size field on OpenBeta page
+  ///
+  /// In en, this message translates to:
+  /// **'JSON character count'**
+  String get openBetaJsonCountLabel;
+
+  /// Button to trigger an OpenBeta GraphQL request
+  ///
+  /// In en, this message translates to:
+  /// **'Load from OpenBeta'**
+  String get openBetaLoadButton;
+
+  /// Line showing how many characters are in the OpenBeta JSON response
+  ///
+  /// In en, this message translates to:
+  /// **'{count} symbols'**
+  String openBetaResultSymbols(int count);
+
+  /// Line showing how many climbing areas were returned
+  ///
+  /// In en, this message translates to:
+  /// **'{count} areas'**
+  String openBetaResultAreas(int count);
+
+  /// Title for the template feature debug home screen
+  ///
+  /// In en, this message translates to:
+  /// **'API debug'**
+  String get templateDebugHomeTitle;
+
+  /// Navigation tile to the Overpass debug page
+  ///
+  /// In en, this message translates to:
+  /// **'Overpass'**
+  String get templateDebugOverpassTile;
+
+  /// Navigation tile to the OpenBeta debug page
+  ///
+  /// In en, this message translates to:
+  /// **'OpenBeta'**
+  String get templateDebugOpenBetaTile;
 }
 
 class _AppLocalizationsDelegate

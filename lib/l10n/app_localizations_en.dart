@@ -29,4 +29,32 @@ class AppLocalizationsEn extends AppLocalizations {
   String overpassResultFountains(int count) {
     return '$count fountains';
   }
+
+  @override
+  String get openBetaPageTitle => 'OpenBeta JSON size';
+
+  @override
+  String get openBetaJsonCountLabel => 'JSON character count';
+
+  @override
+  String get openBetaLoadButton => 'Load from OpenBeta';
+
+  @override
+  String openBetaResultSymbols(int count) {
+    return '$count symbols';
+  }
+
+  @override
+  String openBetaResultAreas(int count) {
+    return '$count areas';
+  }
+
+  @override
+  String get templateDebugHomeTitle => 'API debug';
+
+  @override
+  String get templateDebugOverpassTile => 'Overpass';
+
+  @override
+  String get templateDebugOpenBetaTile => 'OpenBeta';
 }

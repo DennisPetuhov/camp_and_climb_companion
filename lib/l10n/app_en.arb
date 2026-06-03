@@ -33,5 +33,47 @@
         "type": "int"
       }
     }
+  },
+  "openBetaPageTitle": "OpenBeta JSON size",
+  "@openBetaPageTitle": {
+    "description": "Title for the OpenBeta debug page"
+  },
+  "openBetaJsonCountLabel": "JSON character count",
+  "@openBetaJsonCountLabel": {
+    "description": "Label for the read-only JSON size field on OpenBeta page"
+  },
+  "openBetaLoadButton": "Load from OpenBeta",
+  "@openBetaLoadButton": {
+    "description": "Button to trigger an OpenBeta GraphQL request"
+  },
+  "openBetaResultSymbols": "{count} symbols",
+  "@openBetaResultSymbols": {
+    "description": "Line showing how many characters are in the OpenBeta JSON response",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "openBetaResultAreas": "{count} areas",
+  "@openBetaResultAreas": {
+    "description": "Line showing how many climbing areas were returned",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "templateDebugHomeTitle": "API debug",
+  "@templateDebugHomeTitle": {
+    "description": "Title for the template feature debug home screen"
+  },
+  "templateDebugOverpassTile": "Overpass",
+  "@templateDebugOverpassTile": {
+    "description": "Navigation tile to the Overpass debug page"
+  },
+  "templateDebugOpenBetaTile": "OpenBeta",
+  "@templateDebugOpenBetaTile": {
+    "description": "Navigation tile to the OpenBeta debug page"
   }
 }
